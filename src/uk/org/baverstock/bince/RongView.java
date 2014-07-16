@@ -1,4 +1,4 @@
-package uk.org.baverstock.rong;
+package uk.org.baverstock.bince;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,10 +10,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.*;
 
-public class RongView extends View implements Runnable {
+public class BincePong extends View implements Runnable {
     public static final int SK = 150;
     private Paint paint;
-    private String TAG = RongView.class.getCanonicalName();
+    private String TAG = BincePong.class.getCanonicalName();
     private float lastx;
     private float angle;
     private int rad;
@@ -29,17 +29,17 @@ public class RongView extends View implements Runnable {
     private int height;
     private int width;
 
-    public RongView(Context context) {
+    public BincePong(Context context) {
         super(context);
         init();
     }
 
-    public RongView(Context context, AttributeSet attrs) {
+    public BincePong(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public RongView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public BincePong(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
